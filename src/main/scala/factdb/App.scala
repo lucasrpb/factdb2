@@ -11,6 +11,9 @@ object App {
     def apply(): Behavior[Nothing] = Behaviors.setup[Nothing] { context =>
       // Create an actor that handles cluster domain events
       context.spawn(ClusterListener(), "ClusterListener")
+      val a = context.spawn(HelloWorld(), "HelloWorld")
+
+      a ! "hi"
 
       Behaviors.empty
     }
@@ -25,14 +28,19 @@ object App {
     // Create an Akka system
     val system = ActorSystem[Nothing](RootBehavior(), "ClusterSystem", config)
 
-    def main(args: Array[String]): Unit = {
-      val ports =
-        if (args.isEmpty)
-          Seq(2551, 2552, 0)
-        else
-          args.toSeq.map(_.toInt)
-      ports.foreach(startup)
-    }
+  }
+
+  def main(args: Array[String]): Unit = {
+
+    val ports =
+      if (args.isEmpty)
+        Seq(2551, 2552, 0)
+      else
+        args.toSeq.map(_.toInt)
+
+    ports.foreach(startup)
+
+
   }
 
 }

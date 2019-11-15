@@ -4,16 +4,16 @@
 	<info
 		organisation="factdb"
 		module="factdb2_2.13"
-		revision="7199c9bc+20191115-1230"
+		revision="7b0ff495+20191115-1333"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, protobuf, multi-jvm, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20191115123051"/>
+		date="20191115133323"/>
 	<dependencies>
 		<module organisation="com.typesafe.akka" name="akka-multi-node-testkit_2.13">
 			<revision name="2.6.0" status="release" pubdate="20191106073350" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://akka.io/" extra-info.apiURL="https://doc.akka.io/api/akka/2.6.0" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="42">
 				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="3945" time="0" location="D:\Users\resta\.ivy2\cache\com.typesafe.akka\akka-multi-node-testkit_2.13\ivy-2.6.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-multi-node-testkit_2.13/2.6.0/akka-multi-node-testkit_2.13-2.6.0.pom"/>
-				<caller organisation="factdb" name="factdb2_2.13" conf="compile, runtime" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="7199c9bc+20191115-1230"/>
+				<caller organisation="factdb" name="factdb2_2.13" conf="compile, runtime" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="7b0ff495+20191115-1333"/>
 				<artifacts>
 					<artifact name="akka-multi-node-testkit_2.13" type="jar" ext="jar" status="no" details="" size="394797" time="0" location="D:\Users\resta\.ivy2\cache\com.typesafe.akka\akka-multi-node-testkit_2.13\jars\akka-multi-node-testkit_2.13-2.6.0.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-multi-node-testkit_2.13/2.6.0/akka-multi-node-testkit_2.13-2.6.0.jar"/>
@@ -25,7 +25,7 @@
 			<revision name="2.6.0" status="release" pubdate="20191106073534" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://akka.io/" extra-info.apiURL="https://doc.akka.io/api/akka/2.6.0" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="7">
 				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="4587" time="0" location="D:\Users\resta\.ivy2\cache\com.typesafe.akka\akka-cluster-typed_2.13\ivy-2.6.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-cluster-typed_2.13/2.6.0/akka-cluster-typed_2.13-2.6.0.pom"/>
-				<caller organisation="factdb" name="factdb2_2.13" conf="compile, runtime" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="7199c9bc+20191115-1230"/>
+				<caller organisation="factdb" name="factdb2_2.13" conf="compile, runtime" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="7b0ff495+20191115-1333"/>
 				<artifacts>
 					<artifact name="akka-cluster-typed_2.13" type="jar" ext="jar" status="no" details="" size="405005" time="0" location="D:\Users\resta\.ivy2\cache\com.typesafe.akka\akka-cluster-typed_2.13\jars\akka-cluster-typed_2.13-2.6.0.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-cluster-typed_2.13/2.6.0/akka-cluster-typed_2.13-2.6.0.jar"/>
@@ -263,7 +263,7 @@
 			<revision name="2.6.0" status="release" pubdate="20191106073228" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://akka.io/" extra-info.apiURL="https://doc.akka.io/api/akka/2.6.0" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="31">
 				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="5411" time="0" location="D:\Users\resta\.ivy2\cache\com.typesafe.akka\akka-serialization-jackson_2.13\ivy-2.6.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-serialization-jackson_2.13/2.6.0/akka-serialization-jackson_2.13-2.6.0.pom"/>
-				<caller organisation="factdb" name="factdb2_2.13" conf="compile, runtime" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="7199c9bc+20191115-1230"/>
+				<caller organisation="factdb" name="factdb2_2.13" conf="compile, runtime" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="7b0ff495+20191115-1333"/>
 				<artifacts>
 					<artifact name="akka-serialization-jackson_2.13" type="jar" ext="jar" status="no" details="" size="104877" time="0" location="D:\Users\resta\.ivy2\cache\com.typesafe.akka\akka-serialization-jackson_2.13\jars\akka-serialization-jackson_2.13-2.6.0.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-serialization-jackson_2.13/2.6.0/akka-serialization-jackson_2.13-2.6.0.jar"/>
@@ -481,7 +481,7 @@
 			<revision name="2.6.0" status="release" pubdate="20191106073119" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://akka.io/" extra-info.apiURL="https://doc.akka.io/api/akka/2.6.0" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="1">
 				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.html"/>
 				<metadata-artifact status="no" details="" size="3550" time="0" location="D:\Users\resta\.ivy2\cache\com.typesafe.akka\akka-actor-typed_2.13\ivy-2.6.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor-typed_2.13/2.6.0/akka-actor-typed_2.13-2.6.0.pom"/>
-				<caller organisation="factdb" name="factdb2_2.13" conf="compile, runtime" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="7199c9bc+20191115-1230"/>
+				<caller organisation="factdb" name="factdb2_2.13" conf="compile, runtime" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="7b0ff495+20191115-1333"/>
 				<caller organisation="com.typesafe.akka" name="akka-cluster-typed_2.13" conf="default, compile, runtime, master" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="2.6.0"/>
 				<artifacts>
 					<artifact name="akka-actor-typed_2.13" type="jar" ext="jar" status="no" details="" size="709852" time="0" location="D:\Users\resta\.ivy2\cache\com.typesafe.akka\akka-actor-typed_2.13\jars\akka-actor-typed_2.13-2.6.0.jar">
@@ -507,7 +507,7 @@
 				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
 				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
 				<metadata-artifact status="no" details="" size="10512" time="0" location="D:\Users\resta\.ivy2\cache\ch.qos.logback\logback-classic\ivy-1.2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.pom"/>
-				<caller organisation="factdb" name="factdb2_2.13" conf="compile, runtime" rev="1.2.3" rev-constraint-default="1.2.3" rev-constraint-dynamic="1.2.3" callerrev="7199c9bc+20191115-1230"/>
+				<caller organisation="factdb" name="factdb2_2.13" conf="compile, runtime" rev="1.2.3" rev-constraint-default="1.2.3" rev-constraint-dynamic="1.2.3" callerrev="7b0ff495+20191115-1333"/>
 				<artifacts>
 					<artifact name="logback-classic" type="jar" ext="jar" status="no" details="" size="290339" time="0" location="D:\Users\resta\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.2.3.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar"/>
@@ -618,6 +618,7 @@
 				<caller organisation="com.typesafe.akka" name="akka-actor_2.13" conf="compile, runtime" rev="2.13.1" rev-constraint-default="2.13.1" rev-constraint-dynamic="2.13.1" callerrev="2.6.0"/>
 				<caller organisation="com.typesafe.akka" name="akka-remote_2.13" conf="compile, runtime" rev="2.13.1" rev-constraint-default="2.13.1" rev-constraint-dynamic="2.13.1" callerrev="2.6.0"/>
 				<caller organisation="org.scala-lang.modules" name="scala-java8-compat_2.13" conf="compile, runtime" rev="2.13.1" rev-constraint-default="2.13.1" rev-constraint-dynamic="2.13.1" callerrev="0.9.0"/>
+				<caller organisation="factdb" name="factdb2_2.13" conf="compile, runtime" rev="2.13.1" rev-constraint-default="2.13.1" rev-constraint-dynamic="2.13.1" callerrev="7b0ff495+20191115-1333"/>
 				<caller organisation="com.fasterxml.jackson.module" name="jackson-module-scala_2.13" conf="compile, runtime" rev="2.13.1" rev-constraint-default="2.13.1" rev-constraint-dynamic="2.13.1" callerrev="2.10.0"/>
 				<caller organisation="com.typesafe.akka" name="akka-distributed-data_2.13" conf="compile, runtime" rev="2.13.1" rev-constraint-default="2.13.1" rev-constraint-dynamic="2.13.1" callerrev="2.6.0"/>
 				<caller organisation="com.typesafe.akka" name="akka-cluster_2.13" conf="compile, runtime" rev="2.13.1" rev-constraint-default="2.13.1" rev-constraint-dynamic="2.13.1" callerrev="2.6.0"/>
@@ -625,7 +626,6 @@
 				<caller organisation="com.typesafe" name="ssl-config-core_2.13" conf="compile, runtime" rev="2.13.1" rev-constraint-default="2.13.1" rev-constraint-dynamic="2.13.1" callerrev="0.4.0"/>
 				<caller organisation="com.typesafe.akka" name="akka-cluster-tools_2.13" conf="compile, runtime" rev="2.13.1" rev-constraint-default="2.13.1" rev-constraint-dynamic="2.13.1" callerrev="2.6.0"/>
 				<caller organisation="com.typesafe.akka" name="akka-multi-node-testkit_2.13" conf="default, compile, runtime, master" rev="2.13.1" rev-constraint-default="2.13.1" rev-constraint-dynamic="2.13.1" callerrev="2.6.0"/>
-				<caller organisation="factdb" name="factdb2_2.13" conf="compile, runtime" rev="2.13.1" rev-constraint-default="2.13.1" rev-constraint-dynamic="2.13.1" callerrev="7199c9bc+20191115-1230"/>
 				<caller organisation="com.typesafe.akka" name="akka-actor-typed_2.13" conf="default, compile, runtime, master" rev="2.13.1" rev-constraint-default="2.13.1" rev-constraint-dynamic="2.13.1" callerrev="2.6.0"/>
 				<caller organisation="com.typesafe.akka" name="akka-testkit_2.13" conf="compile, runtime" rev="2.13.1" rev-constraint-default="2.13.1" rev-constraint-dynamic="2.13.1" callerrev="2.6.0"/>
 				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.13" conf="compile, runtime" rev="2.13.1" rev-constraint-default="2.13.1" rev-constraint-dynamic="2.13.1" callerrev="2.6.0"/>

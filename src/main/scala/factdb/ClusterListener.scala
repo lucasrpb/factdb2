@@ -28,6 +28,7 @@ object ClusterListener {
 
     Behaviors.receiveMessage { message =>
       message match {
+
         case ReachabilityChange(reachabilityEvent) =>
           reachabilityEvent match {
             case UnreachableMember(member) =>

@@ -4,10 +4,10 @@
 	<info
 		organisation="factdb"
 		module="factdb2_2.13"
-		revision="7199c9bc+20191115-1230"
+		revision="7b0ff495+20191115-1333"
 		conf="pom"
 		confs="compile, runtime, test, provided, optional, protobuf, multi-jvm, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20191115123051"/>
+		date="20191115133323"/>
 	<dependencies>
 	</dependencies>
 </ivy-report>

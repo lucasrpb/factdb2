@@ -1,4 +1,7 @@
-[0m[[0m[33mwarn[0m] [0m[0mD:\Users\resta\IdeaProjects\factdb2\src\main\scala\factdb\App.scala:35:9: local val system in method startup is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0mD:\Users\resta\IdeaProjects\factdb2\src\main\scala\factdb\App.scala:29:9: local val system in method startup is never used[0m
 [0m[[0m[33mwarn[0m] [0m[0m    val system = ActorSystem[Nothing](RootBehavior(), "ClusterSystem", config)[0m
 [0m[[0m[33mwarn[0m] [0m[0m        ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[33mwarn[0m] [0m[0mD:\Users\resta\IdeaProjects\factdb2\src\main\scala\factdb\HelloWorld.scala:5:31: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport factdb.ClusterListener.Event[0m
+[0m[[0m[33mwarn[0m] [0m[0m                              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m
