@@ -1,0 +1,29 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging D:\Users\resta\IdeaProjects\factdb2\target\scala-2.13\factdb2_2.13-7199c9bc+20191115-1230.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	factdb[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\Users\resta\IdeaProjects\factdb2\target\scala-2.13\classes\factdb[0m
+[0m[[0m[0mdebug[0m] [0m[0m	factdb\ClusterListener$Event.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\Users\resta\IdeaProjects\factdb2\target\scala-2.13\classes\factdb\ClusterListener$Event.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	factdb\ClusterListener$ReachabilityChange.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\Users\resta\IdeaProjects\factdb2\target\scala-2.13\classes\factdb\ClusterListener$ReachabilityChange.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	factdb\ClusterListener$MemberChange.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\Users\resta\IdeaProjects\factdb2\target\scala-2.13\classes\factdb\ClusterListener$MemberChange.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	logback.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\Users\resta\IdeaProjects\factdb2\target\scala-2.13\classes\logback.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	factdb\ClusterListener$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\Users\resta\IdeaProjects\factdb2\target\scala-2.13\classes\factdb\ClusterListener$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	factdb\ClusterListener$ReachabilityChange$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\Users\resta\IdeaProjects\factdb2\target\scala-2.13\classes\factdb\ClusterListener$ReachabilityChange$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	application.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\Users\resta\IdeaProjects\factdb2\target\scala-2.13\classes\application.conf[0m
+[0m[[0m[0mdebug[0m] [0m[0m	factdb\ClusterListener.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\Users\resta\IdeaProjects\factdb2\target\scala-2.13\classes\factdb\ClusterListener.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	factdb\App$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\Users\resta\IdeaProjects\factdb2\target\scala-2.13\classes\factdb\App$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	factdb\ClusterListener$MemberChange$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\Users\resta\IdeaProjects\factdb2\target\scala-2.13\classes\factdb\ClusterListener$MemberChange$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	factdb\App$RootBehavior$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\Users\resta\IdeaProjects\factdb2\target\scala-2.13\classes\factdb\App$RootBehavior$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	factdb\App.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\Users\resta\IdeaProjects\factdb2\target\scala-2.13\classes\factdb\App.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m

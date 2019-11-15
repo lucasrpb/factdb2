@@ -1,0 +1,138 @@
+[2019-11-15 12:28:30,117] [INFO] [akka.event.slf4j.Slf4jLogger] [ClusterSystem-akka.actor.default-dispatcher-3] [] - Slf4jLogger started
+[2019-11-15 12:28:30,742] [INFO] [akka.remote.artery.tcp.ArteryTcpTransport] [ClusterSystem-akka.actor.default-dispatcher-3] [ArteryTcpTransport(akka://ClusterSystem)] - Remoting started with transport [Artery tcp]; listening on address [akka://ClusterSystem@127.0.0.1:2551] with UID [5281741610626612515]
+[2019-11-15 12:28:30,788] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Starting up, Akka version [2.6.0] ...
+[2019-11-15 12:28:30,976] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Registered cluster JMX MBean [akka:type=Cluster]
+[2019-11-15 12:28:31,007] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Started up successfully
+[2019-11-15 12:28:31,085] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-11] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - No downing-provider-class configured, manual cluster downing required, see https://doc.akka.io/docs/akka/current/typed/cluster.html#downing
+[2019-11-15 12:28:32,558] [ERROR] [akka.remote.artery.Encoder] [ClusterSystem-akka.actor.default-dispatcher-11] [Encoder(akka://ClusterSystem)] - Failed to serialize message [akka.remote.artery.OutboundHandshake$HandshakeReq].
+java.lang.ClassNotFoundException: sample.cluster.CborSerializable
+	at java.lang.ClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sbt.internal.inc.classpath.ClasspathFilter.loadClass(ClassLoaders.scala:70)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at akka.actor.ReflectiveDynamicAccess.$anonfun$getClassFor$1(ReflectiveDynamicAccess.scala:29)
+	at scala.util.Try$.apply(Try.scala:210)
+	at akka.actor.ReflectiveDynamicAccess.getClassFor(ReflectiveDynamicAccess.scala:28)
+	at akka.serialization.Serialization.$anonfun$bindings$3(Serialization.scala:438)
+	at scala.collection.Iterator$$anon$9.next(Iterator.scala:573)
+	at scala.collection.immutable.HashMapBuilder.addAll(HashMap.scala:2338)
+	at scala.collection.immutable.HashMap$.from(HashMap.scala:2162)
+	at scala.collection.immutable.HashMap$.from(HashMap.scala:2138)
+	at scala.collection.MapOps$WithFilter.map(Map.scala:353)
+	at akka.serialization.Serialization.<init>(Serialization.scala:436)
+	at akka.serialization.SerializationExtension$.createExtension(SerializationExtension.scala:16)
+	at akka.serialization.SerializationExtension$.createExtension(SerializationExtension.scala:13)
+	at akka.actor.ActorSystemImpl.registerExtension(ActorSystem.scala:1146)
+	at akka.actor.ActorSystemImpl.$anonfun$loadExtensions$1(ActorSystem.scala:1184)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:553)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:551)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:921)
+	at akka.actor.ActorSystemImpl.loadExtensions$1(ActorSystem.scala:1180)
+	at akka.actor.ActorSystemImpl.loadExtensions(ActorSystem.scala:1196)
+	at akka.actor.ActorSystemImpl.liftedTree2$1(ActorSystem.scala:1041)
+	at akka.actor.ActorSystemImpl._start$lzycompute(ActorSystem.scala:1029)
+	at akka.actor.ActorSystemImpl._start(ActorSystem.scala:1029)
+	at akka.actor.ActorSystemImpl.start(ActorSystem.scala:1051)
+	at akka.actor.typed.ActorSystem$.createInternal(ActorSystem.scala:267)
+	at akka.actor.typed.ActorSystem$.apply(ActorSystem.scala:182)
+	at factdb.App$.startup(App.scala:35)
+	at factdb.App$.$anonfun$main$2(App.scala:25)
+	at scala.runtime.java8.JFunction1$mcVI$sp.apply(JFunction1$mcVI$sp.scala:18)
+	at scala.collection.immutable.List.foreach(List.scala:305)
+	at factdb.App$.main(App.scala:25)
+	at factdb.App.main(App.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sbt.Run.invokeMain(Run.scala:98)
+	at sbt.Run.run0(Run.scala:92)
+	at sbt.Run.execute$1(Run.scala:68)
+	at sbt.Run.$anonfun$run$4(Run.scala:80)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at sbt.util.InterfaceUtil$$anon$1.get(InterfaceUtil.scala:10)
+	at sbt.TrapExit$App.run(TrapExit.scala:253)
+	at java.lang.Thread.run(Unknown Source)
+[2019-11-15 12:30:56,641] [INFO] [akka.event.slf4j.Slf4jLogger] [ClusterSystem-akka.actor.default-dispatcher-3] [] - Slf4jLogger started
+[2019-11-15 12:30:57,219] [INFO] [akka.remote.artery.tcp.ArteryTcpTransport] [ClusterSystem-akka.actor.default-dispatcher-3] [ArteryTcpTransport(akka://ClusterSystem)] - Remoting started with transport [Artery tcp]; listening on address [akka://ClusterSystem@127.0.0.1:2551] with UID [430091944637149759]
+[2019-11-15 12:30:57,235] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Starting up, Akka version [2.6.0] ...
+[2019-11-15 12:30:57,313] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Registered cluster JMX MBean [akka:type=Cluster]
+[2019-11-15 12:30:57,313] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Started up successfully
+[2019-11-15 12:30:57,360] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-11] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - No downing-provider-class configured, manual cluster downing required, see https://doc.akka.io/docs/akka/current/typed/cluster.html#downing
+[2019-11-15 12:30:58,188] [INFO] [akka.event.slf4j.Slf4jLogger] [ClusterSystem-akka.actor.default-dispatcher-3] [] - Slf4jLogger started
+[2019-11-15 12:30:58,235] [INFO] [akka.remote.artery.tcp.ArteryTcpTransport] [ClusterSystem-akka.actor.default-dispatcher-3] [ArteryTcpTransport(akka://ClusterSystem)] - Remoting started with transport [Artery tcp]; listening on address [akka://ClusterSystem@127.0.0.1:2552] with UID [1870792371950349861]
+[2019-11-15 12:30:58,235] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2552] - Starting up, Akka version [2.6.0] ...
+[2019-11-15 12:30:58,251] [WARN] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Could not register Cluster JMX MBean with name=akka:type=Cluster as it is already registered. If you are running multiple clusters in the same JVM, set 'akka.cluster.jmx.multi-mbeans-in-same-jvm = on' in config
+[2019-11-15 12:30:58,266] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2552] - Started up successfully
+[2019-11-15 12:30:58,266] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2552] - No downing-provider-class configured, manual cluster downing required, see https://doc.akka.io/docs/akka/current/typed/cluster.html#downing
+[2019-11-15 12:30:58,360] [INFO] [akka.event.slf4j.Slf4jLogger] [ClusterSystem-akka.actor.default-dispatcher-3] [] - Slf4jLogger started
+[2019-11-15 12:30:58,469] [INFO] [akka.remote.artery.tcp.ArteryTcpTransport] [ClusterSystem-akka.actor.default-dispatcher-3] [ArteryTcpTransport(akka://ClusterSystem)] - Remoting started with transport [Artery tcp]; listening on address [akka://ClusterSystem@127.0.0.1:51264] with UID [-1320870792588546042]
+[2019-11-15 12:30:58,532] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:51264] - Starting up, Akka version [2.6.0] ...
+[2019-11-15 12:30:58,579] [WARN] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Could not register Cluster JMX MBean with name=akka:type=Cluster as it is already registered. If you are running multiple clusters in the same JVM, set 'akka.cluster.jmx.multi-mbeans-in-same-jvm = on' in config
+[2019-11-15 12:30:58,657] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:51264] - Started up successfully
+[2019-11-15 12:30:58,688] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:51264] - No downing-provider-class configured, manual cluster downing required, see https://doc.akka.io/docs/akka/current/typed/cluster.html#downing
+[2019-11-15 12:30:58,797] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2552] - Received InitJoin message from [Actor[akka://ClusterSystem@127.0.0.1:51264/system/cluster/core/daemon/joinSeedNodeProcess-1#-362470994]], but this node is not initialized yet
+[2019-11-15 12:30:58,797] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2552] - Received InitJoin message from [Actor[akka://ClusterSystem@127.0.0.1:2551/system/cluster/core/daemon/firstSeedNodeProcess-1#1076012442]], but this node is not initialized yet
+[2019-11-15 12:30:58,797] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Received InitJoin message from [Actor[akka://ClusterSystem@127.0.0.1:2552/system/cluster/core/daemon/joinSeedNodeProcess-1#1018020586]], but this node is not initialized yet
+[2019-11-15 12:30:58,829] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2552] - Received InitJoin message from [Actor[akka://ClusterSystem@127.0.0.1:2551/system/cluster/core/daemon/firstSeedNodeProcess-1#1076012442]], but this node is not initialized yet
+[2019-11-15 12:30:58,829] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Received InitJoin message from [Actor[akka://ClusterSystem@127.0.0.1:51264/system/cluster/core/daemon/joinSeedNodeProcess-1#-362470994]], but this node is not initialized yet
+[2019-11-15 12:30:58,844] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Received InitJoinNack message from [Actor[akka://ClusterSystem@127.0.0.1:2552/system/cluster/core/daemon#-722965588]] to [akka://ClusterSystem@127.0.0.1:2551]
+[2019-11-15 12:30:58,876] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Node [akka://ClusterSystem@127.0.0.1:2551] is JOINING itself (with roles [dc-default]) and forming new cluster
+[2019-11-15 12:30:58,876] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - is the new leader among reachable nodes (more leaders may exist)
+[2019-11-15 12:30:58,876] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Leader is moving node [akka://ClusterSystem@127.0.0.1:2551] to [Up]
+[2019-11-15 12:30:58,907] [INFO] [factdb.ClusterListener$] [ClusterSystem-akka.actor.default-dispatcher-11] [akka://ClusterSystem/user/ClusterListener] - Member is Up: akka://ClusterSystem@127.0.0.1:2551
+[2019-11-15 12:31:03,845] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-11] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Received InitJoin message from [Actor[akka://ClusterSystem@127.0.0.1:51264/system/cluster/core/daemon/joinSeedNodeProcess-1#-362470994]] to [akka://ClusterSystem@127.0.0.1:2551]
+[2019-11-15 12:31:03,861] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-11] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Sending InitJoinAck message from node [akka://ClusterSystem@127.0.0.1:2551] to [Actor[akka://ClusterSystem@127.0.0.1:51264/system/cluster/core/daemon/joinSeedNodeProcess-1#-362470994]] (version [2.6.0])
+[2019-11-15 12:31:03,845] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2552] - Received InitJoin message from [Actor[akka://ClusterSystem@127.0.0.1:51264/system/cluster/core/daemon/joinSeedNodeProcess-1#-362470994]], but this node is not initialized yet
+[2019-11-15 12:31:03,907] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-11] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Received InitJoin message from [Actor[akka://ClusterSystem@127.0.0.1:2552/system/cluster/core/daemon/joinSeedNodeProcess-1#1018020586]] to [akka://ClusterSystem@127.0.0.1:2551]
+[2019-11-15 12:31:03,939] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:51264] - Received InitJoinAck message from [Actor[akka://ClusterSystem@127.0.0.1:2551/system/cluster/core/daemon#-806448618]] to [akka://ClusterSystem@127.0.0.1:51264]
+[2019-11-15 12:31:03,939] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-11] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Sending InitJoinAck message from node [akka://ClusterSystem@127.0.0.1:2551] to [Actor[akka://ClusterSystem@127.0.0.1:2552/system/cluster/core/daemon/joinSeedNodeProcess-1#1018020586]] (version [2.6.0])
+[2019-11-15 12:31:03,954] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2552] - Received InitJoinAck message from [Actor[akka://ClusterSystem@127.0.0.1:2551/system/cluster/core/daemon#-806448618]] to [akka://ClusterSystem@127.0.0.1:2552]
+[2019-11-15 12:31:03,970] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-11] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Node [akka://ClusterSystem@127.0.0.1:51264] is JOINING, roles [dc-default]
+[2019-11-15 12:31:03,970] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-11] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Node [akka://ClusterSystem@127.0.0.1:2552] is JOINING, roles [dc-default]
+[2019-11-15 12:31:04,017] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2552] - Welcome from [akka://ClusterSystem@127.0.0.1:2551]
+[2019-11-15 12:31:04,017] [INFO] [factdb.ClusterListener$] [ClusterSystem-akka.actor.default-dispatcher-17] [akka://ClusterSystem/user/ClusterListener] - Member is Up: akka://ClusterSystem@127.0.0.1:2551
+[2019-11-15 12:31:04,017] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-3] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:51264] - Welcome from [akka://ClusterSystem@127.0.0.1:2551]
+[2019-11-15 12:31:04,017] [INFO] [factdb.ClusterListener$] [ClusterSystem-akka.actor.default-dispatcher-10] [akka://ClusterSystem/user/ClusterListener] - Member is Up: akka://ClusterSystem@127.0.0.1:2551
+[2019-11-15 12:31:04,517] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-11] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Leader is moving node [akka://ClusterSystem@127.0.0.1:2552] to [Up]
+[2019-11-15 12:31:04,517] [INFO] [factdb.ClusterListener$] [ClusterSystem-akka.actor.default-dispatcher-3] [akka://ClusterSystem/user/ClusterListener] - Member is Up: akka://ClusterSystem@127.0.0.1:2552
+[2019-11-15 12:31:04,517] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-11] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Leader is moving node [akka://ClusterSystem@127.0.0.1:51264] to [Up]
+[2019-11-15 12:31:04,517] [INFO] [factdb.ClusterListener$] [ClusterSystem-akka.actor.default-dispatcher-3] [akka://ClusterSystem/user/ClusterListener] - Member is Up: akka://ClusterSystem@127.0.0.1:51264
+[2019-11-15 12:31:05,518] [INFO] [factdb.ClusterListener$] [ClusterSystem-akka.actor.default-dispatcher-13] [akka://ClusterSystem/user/ClusterListener] - Member is Up: akka://ClusterSystem@127.0.0.1:2552
+[2019-11-15 12:31:05,518] [INFO] [factdb.ClusterListener$] [ClusterSystem-akka.actor.default-dispatcher-13] [akka://ClusterSystem/user/ClusterListener] - Member is Up: akka://ClusterSystem@127.0.0.1:51264
+[2019-11-15 12:31:05,596] [INFO] [factdb.ClusterListener$] [ClusterSystem-akka.actor.default-dispatcher-17] [akka://ClusterSystem/user/ClusterListener] - Member is Up: akka://ClusterSystem@127.0.0.1:2552
+[2019-11-15 12:31:05,596] [INFO] [factdb.ClusterListener$] [ClusterSystem-akka.actor.default-dispatcher-17] [akka://ClusterSystem/user/ClusterListener] - Member is Up: akka://ClusterSystem@127.0.0.1:51264
+[2019-11-15 12:31:42,025] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-18] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Marked address [akka://ClusterSystem@127.0.0.1:2551] as [Leaving]
+[2019-11-15 12:31:42,025] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-6] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2552] - Marked address [akka://ClusterSystem@127.0.0.1:2552] as [Leaving]
+[2019-11-15 12:31:42,025] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-21] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:51264] - Marked address [akka://ClusterSystem@127.0.0.1:51264] as [Leaving]
+[2019-11-15 12:31:42,072] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-19] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Leader is moving node [akka://ClusterSystem@127.0.0.1:2551] to [Exiting]
+[2019-11-15 12:31:42,072] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-19] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Leader is moving node [akka://ClusterSystem@127.0.0.1:2552] to [Exiting]
+[2019-11-15 12:31:42,103] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-21] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:51264] - Exiting completed
+[2019-11-15 12:31:42,103] [DEBUG] [akka.cluster.typed.internal.receptionist.ClusterReceptionist] [ClusterSystem-akka.actor.internal-dispatcher-8] [akka://ClusterSystem/system/clusterReceptionist] - ClusterReceptionist [akka://ClusterSystem@127.0.0.1:2551] - terminated/removed
+[2019-11-15 12:31:42,103] [DEBUG] [akka.cluster.typed.internal.receptionist.ClusterReceptionist] [ClusterSystem-akka.actor.internal-dispatcher-8] [akka://ClusterSystem/system/clusterReceptionist] - ClusterReceptionist [akka://ClusterSystem@127.0.0.1:51264] - terminated/removed
+[2019-11-15 12:31:42,103] [DEBUG] [akka.cluster.typed.internal.receptionist.ClusterReceptionist] [ClusterSystem-akka.actor.internal-dispatcher-4] [akka://ClusterSystem/system/clusterReceptionist] - Cancel all timers
+[2019-11-15 12:31:42,103] [DEBUG] [akka.cluster.typed.internal.receptionist.ClusterReceptionist] [ClusterSystem-akka.actor.internal-dispatcher-2] [akka://ClusterSystem/system/clusterReceptionist] - Cancel all timers
+[2019-11-15 12:31:42,103] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-21] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:51264] - Shutting down...
+[2019-11-15 12:31:42,103] [INFO] [factdb.ClusterListener$] [ClusterSystem-akka.actor.default-dispatcher-21] [akka://ClusterSystem/user/ClusterListener] - Member is Removed: [akka://ClusterSystem@127.0.0.1:2551, Exiting] after {}
+[2019-11-15 12:31:42,119] [DEBUG] [akka.cluster.typed.internal.receptionist.ClusterReceptionist] [ClusterSystem-akka.actor.internal-dispatcher-9] [akka://ClusterSystem/system/clusterReceptionist] - ClusterReceptionist [akka://ClusterSystem@127.0.0.1:2552] - terminated/removed
+[2019-11-15 12:31:42,119] [DEBUG] [akka.cluster.typed.internal.receptionist.ClusterReceptionist] [ClusterSystem-akka.actor.internal-dispatcher-2] [akka://ClusterSystem/system/clusterReceptionist] - Cancel all timers
+[2019-11-15 12:31:42,119] [INFO] [factdb.ClusterListener$] [ClusterSystem-akka.actor.default-dispatcher-21] [akka://ClusterSystem/user/ClusterListener] - Member is Removed: [akka://ClusterSystem@127.0.0.1:2552, Exiting] after {}
+[2019-11-15 12:31:42,103] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-21] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2552] - Exiting completed
+[2019-11-15 12:31:42,103] [INFO] [factdb.ClusterListener$] [ClusterSystem-akka.actor.default-dispatcher-24] [akka://ClusterSystem/user/ClusterListener] - Member is Removed: [akka://ClusterSystem@127.0.0.1:2551, Exiting] after {}
+[2019-11-15 12:31:42,103] [WARN] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-21] [Cluster(akka://ClusterSystem)] - Could not unregister Cluster JMX MBean with name=akka:type=Cluster as it was not found. If you are running multiple clusters in the same JVM, set 'akka.cluster.jmx.multi-mbeans-in-same-jvm = on' in config
+[2019-11-15 12:31:42,119] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-19] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Leader is moving node [akka://ClusterSystem@127.0.0.1:51264] to [Exiting]
+[2019-11-15 12:31:42,119] [INFO] [factdb.ClusterListener$] [ClusterSystem-akka.actor.default-dispatcher-20] [akka://ClusterSystem/user/ClusterListener] - Member is Removed: [akka://ClusterSystem@127.0.0.1:2551, Exiting] after {}
+[2019-11-15 12:31:42,134] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-21] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2552] - Shutting down...
+[2019-11-15 12:31:42,197] [WARN] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-21] [Cluster(akka://ClusterSystem)] - Could not unregister Cluster JMX MBean with name=akka:type=Cluster as it was not found. If you are running multiple clusters in the same JVM, set 'akka.cluster.jmx.multi-mbeans-in-same-jvm = on' in config
+[2019-11-15 12:31:42,166] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-21] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:51264] - Successfully shut down
+[2019-11-15 12:31:42,197] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-19] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Exiting completed
+[2019-11-15 12:31:42,212] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-19] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Shutting down...
+[2019-11-15 12:31:42,228] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-19] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2551] - Successfully shut down
+[2019-11-15 12:31:42,212] [INFO] [akka.cluster.Cluster] [ClusterSystem-akka.actor.default-dispatcher-21] [Cluster(akka://ClusterSystem)] - Cluster Node [akka://ClusterSystem@127.0.0.1:2552] - Successfully shut down
+[2019-11-15 12:31:42,228] [INFO] [akka.remote.RemoteActorRefProvider$RemotingTerminator] [ClusterSystem-akka.actor.default-dispatcher-21] [akka://ClusterSystem@127.0.0.1:2552/system/remoting-terminator] - Shutting down remote daemon.
+[2019-11-15 12:31:42,228] [INFO] [akka.actor.LocalActorRef] [ClusterSystem-akka.actor.default-dispatcher-21] [akka://ClusterSystem/system/cluster/core/daemon] - Message [akka.cluster.GossipEnvelope] from Actor[akka://ClusterSystem@127.0.0.1:2551/system/cluster/core/daemon#-806448618] to Actor[akka://ClusterSystem/system/cluster/core/daemon#738073120] was not delivered. [1] dead letters encountered. If this is not an expected behavior then Actor[akka://ClusterSystem/system/cluster/core/daemon#738073120] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[2019-11-15 12:31:42,228] [INFO] [akka.actor.RepointableActorRef] [ClusterSystem-akka.actor.default-dispatcher-19] [akka://ClusterSystem/system/clusterReceptionist] - Message [akka.actor.typed.internal.AdaptMessage] to Actor[akka://ClusterSystem/system/clusterReceptionist#1689754299] was not delivered. [1] dead letters encountered. If this is not an expected behavior then Actor[akka://ClusterSystem/system/clusterReceptionist#1689754299] may have terminated unexpectedly. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+[2019-11-15 12:31:42,244] [INFO] [akka.remote.RemoteActorRefProvider$RemotingTerminator] [ClusterSystem-akka.actor.default-dispatcher-21] [akka://ClusterSystem@127.0.0.1:2552/system/remoting-terminator] - Remote daemon shut down; proceeding with flushing remote transports.
+[2019-11-15 12:31:43,225] [INFO] [akka.remote.RemoteActorRefProvider$RemotingTerminator] [ClusterSystem-akka.actor.default-dispatcher-21] [akka://ClusterSystem@127.0.0.1:2552/system/remoting-terminator] - Remoting shut down.
